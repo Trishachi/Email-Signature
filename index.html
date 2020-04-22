@@ -3,20 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Artifika"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
     <title>Email Signature</title>
     <style>
       main {
-        width: 500px;
+        width: 350px;
+        font-family: "Lato", sans-serif;
       }
 
       .left {
         width: 40%;
         float: left;
+        text-align: center;
       }
 
       .right {
         width: 60%;
         float: right;
+      }
+
+      .profile-pic {
+        border-radius: 50%;
+        width: 80px;
+        margin-top: 25px;
+      }
+
+      .name {
+        font-family: "Artifika", sans-serif;
+        font-size: 1em;
+        font-weight: bold;
+        margin-bottom: 0;
+        color: #e65541;
+      }
+
+      h3 {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        color: #e65541;
+        font-size: 0.8em;
+      }
+
+      .socials ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      .socials ul li {
+        display: inline-block;
+      }
+
+      a.social-icon {
+        display: inline-block;
+        font-size: 0.75em;
+        color: white;
+        margin-left: 5px;
+        padding: 5px;
+        width: 10px;
+        height: 10px;
+        background-color: #e65541;
+        background-size: 30px 30px;
+        border-radius: 50%;
+        transition: all 0.25s;
+      }
+
+      a.social-icon:hover {
+        opacity: 0.65;
+      }
+
+      .details p {
+        font-size: 0.75em;
+        margin: 5px;
+      }
+
+      hr {
+        border-color: #e65541;
+        border-width: 0.1rem;
       }
     </style>
   </head>
@@ -25,28 +96,55 @@
     <main>
       <div class="left">
         <img
+          class="profile-pic"
           src="https://media-exp1.licdn.com/dms/image/C4E03AQHmRY1OuM60-w/profile-displayphoto-shrink_200_200/0?e=1593043200&v=beta&t=5sW47zj6p1sFP0-snAqPidet4FzH-8CIlqpZyXEOSCY"
           alt="Profile Picture"
         />
-        <div class="socials"></div>
+        <div class="socials">
+          <ul>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/chisom-trisha-okoye/"
+                class="social-icon"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/trishachi" class="social-icon"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/Trishachi" class="social-icon"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/trishachi" class="social-icon"
+                ><i class="fab fa-codepen"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="right">
         <div class="title">
-          <h1>Chisom Trisha Okoye</h1>
-          <h3>Front End Developer</h3>
+          <h1 class="name">Chisom Trisha Okoye</h1>
+          <h3>&lt; Front End Developer /&gt;</h3>
         </div>
         <div class="details">
           <p>
-            Email:
+            <i class="far fa-envelope"></i>:
             <a href="mailto:chisombili.okoye@gmail.com"
               >chisombili.okoye@gmail.com</a
             >
           </p>
-          <p>Mobile: 613 879 2089</p>
-          <p>Location: Calgary, AB</p>
+          <p><i class="fas fa-phone-alt"></i>: 613 879 2089</p>
+          <p><i class="fas fa-map-marker-alt"></i>: Calgary, AB</p>
           <hr />
           <p>
-            Website:<a href="https://trishachi.github.io/"
+            <i class="fas fa-globe-americas"></i>:
+            <a href="https://trishachi.github.io/"
               >https://trishachi.github.io</a
             >
           </p>
